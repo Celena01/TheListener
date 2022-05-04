@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CelenaLima_SITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/originals/82/53/c4/8253c42a47180ca45c2b8e5d3905731a.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">SOBRE NÓS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MUSICAS E ARTISTAS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CADASTRO</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="inicio">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Seu encontro diário com a musica</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Listener</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Escute Online</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE O THE LISTENER</span></h5>
+    <p>O the Listener foi um site criado para conectar a musica e o usuário aproximando você dos seus artistas favoritos a qualquer hora do dia!</p>
+    <p>Aqui você ouve musica boa, acompanha as letras e canta junto quando e onde quiser.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Seja nosso convidado nessa aventura sonora</i></p>
+      <p>Uma iniciativa de Celena Lima</p>
+    </div>
+    <img src="https://cdn.dribbble.com/users/824356/screenshots/14722892/spotify_redesign_-_lyrics.png?compress=1&resize=400x300&vertical=top" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Escute pelo Spotify ou deezer</strong> a qualquer momento</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="musicas e artistas">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MUSICAS E ARTISTAS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openmusicaseartistas(event, 'Musica');" id="myLink">
+        <div class="w3-col s6 tablink">Musica</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openmusicaseartistas(event, 'Artistas');">
+        <div class="w3-col s6 tablink">Artistas</div>
+      </a>
+    </div>
+
+    <div id="Musica" class="w3-container musicas e artistas w3-padding-48 w3-card">
+        <h5>Pop</h5>
+        <p class="w3-text-grey">Musicas mais populares que estão bombando nas rádios</p><br>
+      
+        <h5>Rock</h5>
+        <p class="w3-text-grey">Os clássicos do rock para animar seu dia</p><br>
+      
+        <h5>Funk</h5>
+        <p class="w3-text-grey">Ritmo contagiante para você se soltar e cair na pista de dança</p><br>
+      
+        <h5>R&B</h5>
+        <p class="w3-text-grey">Perfeito para quem quer uma noite calma e relaxante</p><br>
+      
+        <h5>Sertanejo</h5>
+        <p class="w3-text-grey">Para todos que gostam de uma sofrência</p>
+      </div>
+  
+      <div id="Artistas" class="w3-container musicas e artistas w3-padding-48 w3-card">
+        <h5>Lana Del Rey</h5>
+        <p class="w3-text-grey">Ouvir Lana Del Rey</p><br>
+      
+        <h5>Arca</h5>
+        <p class="w3-text-grey">Ouvir Arca</p><br>
+      
+        <h5>Rex Orange Country</h5>
+        <p class="w3-text-grey">Ouvir Rex Orange Country</p><br>
+      
+        <h5>Rainbow Kitten Flavour</h5>
+        <p class="w3-text-grey">Ouvir Rainbow Kitten Flavour</p><br>
+      
+        <h5>AnaVitoria</h5>
+        <p class="w3-text-grey">Ouvir AnaVitoria</p>
+      </div>  
+      <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2021/03/SPOTIFY_US_FOR-THE-RECORD_PR-ASSET_032521_V2_CF-01.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    </div>
+  </div>
+  
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ESTAMOS SEMPRE ONLINE</span></h5>
+    <p>Você pode nos encontrar a qualquer parte do seu dia, e em qualquer lugar.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3y93EtQWcqT53Fo616XhERChnrQdZJj3jGg&usqp=CAU" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Importante!</span>O site e uma iniciativa gratuita, então, em caso de problemas tenha paciência. Resolveremos logo!</p>
+    <p><strong>Seja Paciente!</strong>estamos trabalhando para o melhor!</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required nome="Nome"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantas pessoas usam a conta" required name="Pessoas"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Feedback" required name="Feedback"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR FEEDBACK</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMusicasseArtistas(evt, musicaseArtistasName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("Musicas e Artistas");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(musicaeArtistasName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
